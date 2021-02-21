@@ -37,10 +37,10 @@ def move_pictures_dated_folder(inpath, outpath):
 if __name__ == "__main__":
     Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
     inpath = askdirectory(title="Source path") # show an "Open" dialog box and return the path to the selected file
-    if inpath is "":
+    if inpath == "":
         raise UserWarning("Must select source path with all pictures")
     outpath = askdirectory(title="Destination path")
-    if outpath is "":
+    if outpath == "":
         raise UserWarning("Must select destination path with folders")
     print("Copying from ", inpath, "to", outpath)
 
