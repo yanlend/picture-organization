@@ -93,6 +93,9 @@ def copytree(src, dst, symlinks=False, ignore=None, copy_function=shutil.copy2,
         raise Error(errors)
     return dst
 
+# Copy all files except ".arw"
+# 
+# Usage: `python copy_except_raw.py` and choose source and destination folders via UI
 if __name__ == "__main__":
 	Tk().withdraw() # we don't want a full GUI, so keep the root window from appearing
 	inpath = askdirectory(title="Quellpfad") # show an "Open" dialog box and return the path to the selected file

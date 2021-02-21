@@ -1,4 +1,9 @@
 # coding: utf-8
+# Show a frame from the video
+# WORK IN PROGRESS, better use FFMPEG directly
+# - Paths are hardcoded
+# - Image sizes are hardcoded
+
 FFMPEG_BIN = "ffmpeg.exe" # on Windows
 import subprocess as sp
 command = [

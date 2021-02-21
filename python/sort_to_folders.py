@@ -1,3 +1,6 @@
+# Sort images into separate folders by date
+# 
+# Usage: `python sort_to_folders.py` and choose source and destination folders via UI
 from tkinter import Tk
 from tkinter.filedialog import askdirectory
 import shutil
